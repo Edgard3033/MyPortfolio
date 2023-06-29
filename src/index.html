@@ -13,17 +13,19 @@
     <section class="hero">
         <nav>
             <img class="logo" src="images/Portfolio logo.png" alt="FullStack Logo"/>
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
+            <ul id="nav-list">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <img src="images/icons8-hamburger-30.png" />
+            </button>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Edgard Enriquez</h1>
                 <p>Full Stack Developer</p>
-                <div class="button">About Me</div>
             </div>
             <div class="socials">
                 <div>
@@ -39,9 +41,39 @@
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <section class="sub-section" id="about-me">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>Hello, My name is Edgard Enriquez, I am a Software Developer with a passion for learning and building!</p>
+        </div>
+        <div class="headshot-container">
+            <img class="headshot" src="images/Profile-Picture.jpg" alt="Edgard Enriquez headshot" />
+        </div>
+    </section>
+    <section class="sub-section2" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/Tic Tac Toe OG Image.png" alt="Project one image" class="project-image"/>
+                <h3>Arcade</h3>
+                <p class="subtext">A simple Tic-Tac-Toe game built from using Javascript.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://willowy-paprenjak-934e5e.netlify.app/">View Here</a></p>
+            </div>
+            <div class="project-card">
+                <div class="project-card">
+                    <img src="images/Puppy_Bowl.png" alt="Project one image" class="project-image"/>
+                    <h3>Puppy Bowl</h3>
+                    <p class="subtext">Puppy Bowl website demostrating building a website using React.</p>
+                    <hr/>
+                    <p class="subtext"><a class="project-link" href="https://zippy-starship-269f9c.netlify.app/">View Here</a></p>
+            </div> 
+        </div>
+    </section>
+    <footer id="contact-me">
+        <h2>Contact Me</h2>
+        <p>ed233094@outlook.com</p>
+    </footer>
 
     
     <script src="app.js"></script>

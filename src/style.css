@@ -4,7 +4,6 @@ body {
 }
 
 section {
-    height: 500px;
     background-color: white;
     border: solid 1px;
 }
@@ -17,8 +16,10 @@ section {
 }
 
 footer {
-    height: 500px;
+    padding: 80px;
     background-color: black;
+    color: white;
+    text-align: center;
 }
 
 nav {
@@ -34,6 +35,10 @@ ul {
     font-size: 30px;
 }
 
+ul.show {
+    display: block;
+}
+
 li {
     text-decoration: none;
 }
@@ -41,6 +46,10 @@ li {
 h1 {
     font-size: 80px;
     margin: 0;
+}
+
+h2 {
+    font-size: 50px;
 }
 
 p {
@@ -93,4 +102,111 @@ p {
 
 .social {
     margin: 30px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.headshot {
+    width: 300px;
+    transform: rotate(90deg);
+    border-radius: 150px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px; 
+    height: 500px;
+    box-shadow: 5px 5px 20px grey;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.subtext {
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 150px;
+    box-shadow: 5px 5px 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #9d37e6;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: self-end;
+    }
+
+    ul {
+        display: none;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        display: none;
+    }
 }
