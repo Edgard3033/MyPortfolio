@@ -1,0 +1,96 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    height: 500px;
+    background-color: white;
+    border: solid 1px;
+}
+
+.hero {
+    background-color: #91A3B0;
+    height: 100vh;
+    color: black;
+    font-size: 40px;
+}
+
+footer {
+    height: 500px;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: blueviolet;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #9d37e6;
+}
+
+.button:active {
+    background-color: darkgray;
+    color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 80px;
+    margin: 30px;
+}
+
+.social {
+    margin: 30px;
+}
